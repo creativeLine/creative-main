@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="DepartmentMaster" />
+        <module name="API-GATEWAY" />
+        <module name="EmployeeMaster" />
+        <module name="serviceRegistry" />
+        <module name="salaryService" />
+        <module name="Attendence" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-GATEWAY" options="-parameters" />
+      <module name="Attendence" options="-parameters" />
+      <module name="DepartmentMaster" options="-parameters" />
+      <module name="EmployeeMaster" options="-parameters" />
+      <module name="salaryService" options="-parameters" />
+      <module name="serviceRegistry" options="-parameters" />
+    </option>
+  </component>
+</project>

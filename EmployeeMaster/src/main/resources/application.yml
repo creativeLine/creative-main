@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: EMPLOYEE-MASTER
+  datasource:
+    url: jdbc:mysql://localhost:3306/EmployeeMaster?createTableIfNotExist=true
+    username: root
+    password: Admin@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8083
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
