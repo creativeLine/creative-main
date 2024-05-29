@@ -8,31 +8,25 @@ spring:
           uri: lb://DEPARTMENT-SERVICE
           predicates:
             - Path=/department/**
-
         - id: EMPLOYEE-MASTER
           uri: lb://EMPLOYEE-MASTER
           predicates:
             - Path=/employee/**
-
         - id: SALARY-SERVICE
           uri: lb://SALARY-SERVICE
           predicates:
             - Path=/salary/**
-
         - id: ATTENDANCE
           uri: lb://ATTENDANCE
           predicates:
             - Path=/attendance/**
 
 server:
-  port: 8080
-
-
+  port: 8091
 
 
   main:
     web-application-type: reactive
-
 
 eureka:
   instance:
@@ -43,5 +37,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-
-
+security:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri: http://localhost:8080/realms/creative-main-microservice
