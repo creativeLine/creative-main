@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Salary {
 
-    private String empCode;
-    private Integer salaryId;
+
     private Double basicPay;
     private Double hra;
     private Double convenience;

@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b8f0eb-3e6a-4f28-95ca-a8724b3cfe78" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-GATEWAY/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/jib-classpath-file" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/jib-main-class-file" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/layers/41a8784b9f77cbf868d61f8aade2013822c7d949997db206d5b2a58f2765d3ca/595a9a328388bfb000f331ddda0ef1381ca5694fe93e1f5a9a02e066f99906f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/layers/6b91c4314b93b18b8e7271f54c4ecf0cdd16195de86a200a577f5f7fc0adaec6/baadfb864524b71af9e08a69eebd738a4e15b295a2a7a2a95661b5c132b2198b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/layers/6dace090758cc368e9af421e23bdbacb82eb9f88552cce562b81b5c33a14dc79/ebd295989a699148ca17d6e252d7202524f8885935d48c7bec1f11bc388b7c85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/layers/c156fede4a064de736a3366b472f42929fb25f3aa710b01a31946b41a4799624/113c3706dfe97c5c8a850697752f2224fb6f80528d2b810277176af12d779454" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/selectors/1af4d64c0b881c1440ef4b30023691b99e58e1967f35f14b917ff0be983ea86d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/selectors/712d139a8092fd0c939c30ca3955184917d6744909f086bd5f9ba80c9faf14b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/selectors/a821d6575b423c74f80386e2f91eba43ef4afb2b2ef528069dc60616d4846638" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-cache/selectors/aab81bab89feff784e6a0f97ece0f58f1dac252889fa0c4080591f8a4e7faae4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-image.digest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-image.id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/jib-image.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DepartmentMaster/src/main/java/com/example/DepartmentMaster/Controller/DepartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DepartmentMaster/src/main/java/com/example/DepartmentMaster/Controller/DepartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DepartmentMaster/target/classes/com/example/DepartmentMaster/Controller/DepartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/DepartmentMaster/target/classes/com/example/DepartmentMaster/Controller/DepartController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.yml" beforeDir="false" />
@@ -175,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.SalaryServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.AttendenceApplication" />
         <item itemvalue="Application.JwtAuthenticationApplication" />
         <item itemvalue="Application.EmployeeMasterApplication" />

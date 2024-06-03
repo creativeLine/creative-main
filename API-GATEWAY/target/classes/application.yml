@@ -4,8 +4,8 @@ spring:
   cloud:
     gateway:
       httpclient:
-        connect-timeout: 5000 # in milliseconds
-        response-timeout: 5000 # in milliseconds
+        connect-timeout: 2000 # in milliseconds
+        response-timeout: 2000 # in milliseconds
       routes:
         - id: DEPARTMENT-SERVICE
           uri: lb://DEPARTMENT-SERVICE
