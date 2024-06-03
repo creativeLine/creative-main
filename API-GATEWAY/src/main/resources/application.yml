@@ -3,30 +3,45 @@ spring:
     name: api-gateway
   cloud:
     gateway:
+      httpclient:
+        connect-timeout: 5000 # in milliseconds
+        response-timeout: 5000 # in milliseconds
       routes:
         - id: DEPARTMENT-SERVICE
           uri: lb://DEPARTMENT-SERVICE
           predicates:
             - Path=/department/**
+          filters:
+            - name: AuthenticationFilter
+
         - id: EMPLOYEE-MASTER
           uri: lb://EMPLOYEE-MASTER
           predicates:
             - Path=/employee/**
+          filters:
+            - name: AuthenticationFilter
+
         - id: SALARY-SERVICE
           uri: lb://SALARY-SERVICE
           predicates:
             - Path=/salary/**
+          filters:
+            - name: AuthenticationFilter
+
         - id: ATTENDANCE
           uri: lb://ATTENDANCE
           predicates:
             - Path=/attendance/**
+          filters:
+            - name: AuthenticationFilter
+
+        - id: AUTH-SERVICE
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
 
 server:
   port: 8091
-
-
-  main:
-    web-application-type: reactive
 
 eureka:
   instance:

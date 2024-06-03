@@ -22,6 +22,7 @@ public class DepartController {
     private DepartService departService;
 
     // Create operation
+    
     @PostMapping("/create")
     public String createDepartment(@RequestBody RequestDto department) {
         return departService.createDepartment(department);

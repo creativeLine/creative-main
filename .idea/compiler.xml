@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DepartmentMaster" />
+        <module name="jwtAuthentication" />
         <module name="API-GATEWAY" />
         <module name="EmployeeMaster" />
         <module name="serviceRegistry" />
@@ -22,6 +23,7 @@
       <module name="Attendence" options="-parameters" />
       <module name="DepartmentMaster" options="-parameters" />
       <module name="EmployeeMaster" options="-parameters" />
+      <module name="jwtAuthentication" options="-parameters" />
       <module name="salaryService" options="-parameters" />
       <module name="serviceRegistry" options="-parameters" />
     </option>
