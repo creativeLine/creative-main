@@ -17,12 +17,12 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String gstNo) throws UsernameNotFoundException {
 
-       var user =  userRepository.findUserByUsername(username)
+       var user =  userRepository.findGstByGstNo(gstNo)
                 .orElseThrow(()->new UsernameNotFoundException("username not found"));
 
 
-       return new User(user.getUsername(),user.getPassword(),user.getAuthorities());
+       return new User(user.getGstNo(),user.getPassword(),user.getAuthorities());
     }
 }

@@ -7,11 +7,11 @@ public class UserTransformation {
 
     public static User convertEntity(UserRequestDto userRequestDto){
         User user = User.builder()
-                .username(userRequestDto.getUsername())
-                .email(userRequestDto.getEmail())
+                .gstNo(userRequestDto.getUsername())
+                .panCardNo(userRequestDto.getEmail())
                 .password(userRequestDto.getPassword())
-                .age(userRequestDto.getAge())
-                .gender(userRequestDto.getGender())
+                .companyName(userRequestDto.getAge())
+                .msmeId(userRequestDto.getGender())
                 .build();
         return user;
     }

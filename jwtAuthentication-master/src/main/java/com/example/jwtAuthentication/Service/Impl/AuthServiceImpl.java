@@ -59,7 +59,7 @@ public class AuthServiceImpl implements AuthService {
 
 
         //check weather user already exist or not
-        Optional<User> optionalUser = userRepository.findUserByUsername(user.getUsername());
+        Optional<User> optionalUser = userRepository.findGstByGstNo(user.getGstNo());
 
         if(optionalUser.isPresent()){
 
@@ -80,7 +80,7 @@ public class AuthServiceImpl implements AuthService {
 
         //generate token
 
-        return JwtUtils.generateToken(user.getUsername());
+        return JwtUtils.generateToken(user.getGstNo());
 
 
     }

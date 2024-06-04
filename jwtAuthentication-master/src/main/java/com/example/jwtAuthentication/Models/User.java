@@ -18,11 +18,11 @@ public class User {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer  id;
 
-    private String username;
-    private String email;
+    private String gstNo;
+    private String panCardNo;
     private String password;
-    private String age;
-    private String gender;
+    private String companyName;
+    private String msmeId;
 
     List<GrantedAuthority> authorities;
 }

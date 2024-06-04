@@ -35,11 +35,11 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
             if(JwtUtils.validateToken(jwtToken)){
 
                 //get username from jwt token
-                var usernameOptional = JwtUtils.getUsernameFromToken(jwtToken);
-                usernameOptional.ifPresent(username->{
+                var gstNoOptional = JwtUtils.getUsernameFromToken(jwtToken);
+                gstNoOptional.ifPresent(gstNo->{
 
                     //fetch user details with the help of username
-                    var userDetails =  userDetailsService.loadUserByUsername(username);
+                    var userDetails =  userDetailsService.loadUserByUsername(gstNo);
 
                     //create authentication token
 

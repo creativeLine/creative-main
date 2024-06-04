@@ -47,13 +47,13 @@ public class JwtUtils {
                 .map(Claims::getSubject);
     }
 
-    public static String generateToken(String username) {
+    public static String generateToken(String gstNo) {
         Date currentDate = new Date();
         Date expirationDate = DateUtils.addMinutes(currentDate, 10);
         return Jwts.builder()
                 .setId(UUID.randomUUID().toString())
                 .setIssuer(ISSUER)
-                .setSubject(username)
+                .setSubject(gstNo)
                 .signWith(SECRET_KEY, SignatureAlgorithm.HS256)
                 .setIssuedAt(currentDate)
                 .setExpiration(expirationDate)
