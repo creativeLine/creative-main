@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94b8f0eb-3e6a-4f28-95ca-a8724b3cfe78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Controller/authController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Controller/authController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Dto/RequsetDto/AuthRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Dto/RequsetDto/AuthRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Service/Impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Service/UserDetails/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Service/UserDetails/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Trnasformations/UserTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Trnasformations/UserTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Utils/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/config/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/config/JWTAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/config/SecurityFilterChainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/config/SecurityFilterChainConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.yml" beforeDir="false" />
@@ -93,13 +84,13 @@
       <recent name="Enum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JwtAuthenticationApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.APIGATEWAY.ApiGatewayApplication" />
-      <module name="API-GATEWAY" />
+  <component name="RunManager" selected="Application.AttendenceApplication">
+    <configuration name="AttendenceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Attendence.AttendenceApplication" />
+      <module name="Attendence" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.APIGATEWAY.*" />
+          <option name="PATTERN" value="com.example.Attendence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,10 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JwtAuthenticationApplication" />
+        <item itemvalue="Application.AttendenceApplication" />
+        <item itemvalue="Application.SalaryServiceApplication" />
         <item itemvalue="Application.DepartmentMasterApplication" />
         <item itemvalue="Application.EmployeeMasterApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.SalaryServiceApplication" />
       </list>
     </recent_temporary>
   </component>

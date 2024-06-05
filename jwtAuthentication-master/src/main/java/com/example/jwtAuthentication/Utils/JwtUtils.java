@@ -49,7 +49,7 @@ public class JwtUtils {
 
     public static String generateToken(String gstNo) {
         Date currentDate = new Date();
-        Date expirationDate = DateUtils.addMinutes(currentDate, 10);
+        Date expirationDate = DateUtils.addMinutes(currentDate, 60);
         return Jwts.builder()
                 .setId(UUID.randomUUID().toString())
                 .setIssuer(ISSUER)
