@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserRequestDto {
 
-    private String username;
-    private String email;
+    private String gstNo;
+    private String company;
     private String password;
-    private String age;
-    private String gender;
+    private String panCardNo;
+    private String msmeId;
     //we can add other field as we want
 }

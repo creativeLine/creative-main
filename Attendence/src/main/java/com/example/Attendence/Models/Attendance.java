@@ -1,15 +1,8 @@
 package com.example.Attendence.Models;
 
-
-import com.example.Attendence.Enum.Status;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.sql.Time;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -18,8 +11,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString(exclude = "monthList") // Exclude this field from toString to avoid recursion
 public class Attendance {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,20 +20,12 @@ public class Attendance {
 
     private String empCode;
 
-
-
-    @OneToMany(mappedBy = "attendance",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "attendance", cascade = CascadeType.ALL)
     private List<Month> monthList;
 
-
-
-
-
-
-
-
-
-
-
-
+    // Custom toString method if needed
+    @Override
+    public String toString() {
+        return "Attendance{id=" + attendId + ", empCode='" + empCode + "'}";
+    }
 }

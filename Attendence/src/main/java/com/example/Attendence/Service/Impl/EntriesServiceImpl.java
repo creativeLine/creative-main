@@ -3,18 +3,14 @@ package com.example.Attendence.Service.Impl;
 import com.example.Attendence.Dtos.RequestDto.EntryDto;
 import com.example.Attendence.Dtos.RequestDto.ExitDto;
 import com.example.Attendence.Enum.Status;
-import com.example.Attendence.Exception.AttendanceAlreadyTaken;
-import com.example.Attendence.Exception.notPresent;
-import com.example.Attendence.Models.Attendance;
 import com.example.Attendence.Models.Day;
 import com.example.Attendence.Models.Entries;
-import com.example.Attendence.Models.Month;
-import com.example.Attendence.Repository.AttendanceRepository;
 import com.example.Attendence.Repository.DayRepository;
 import com.example.Attendence.Repository.EntriesRepository;
 import com.example.Attendence.Repository.MonthRepository;
 import com.example.Attendence.Service.EntriesService;
-import com.netflix.discovery.converters.Auto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +33,8 @@ public class EntriesServiceImpl implements EntriesService {
     @Autowired
     private MonthRepository monthRepository;
 
+    private final Logger logger = LoggerFactory.getLogger(AttendanceServiceImpl.class);
+
 
     @Override
     public void saveIn(EntryDto request) throws Exception {
@@ -45,7 +43,7 @@ public class EntriesServiceImpl implements EntriesService {
 
 
         Optional<Day> optionalDay = dayRepository.findByMonthMonthNameAndDayIdAndEmpCode(request.getMonthName(),request.getDayId(),request.getEmpCode());
-
+        logger.info(optionalDay.get()+"here is information");
         if(optionalDay.isEmpty()){
             throw new RuntimeException("Invalid");
         }
@@ -58,6 +56,9 @@ public class EntriesServiceImpl implements EntriesService {
         Day day = optionalDay.get();
         day.setStatus(Status.PP);
         In.setDay(day);
+
+        logger.info(In+"here is information");
+
         entriesRepository.save(In);
 
     }

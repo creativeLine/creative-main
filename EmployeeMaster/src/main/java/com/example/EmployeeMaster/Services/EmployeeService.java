@@ -16,5 +16,9 @@ public interface EmployeeService {
     String update(EmpRequestDto empRequestDto) throws Exception;
 
     int getTotal();
+
+    String delete(String empCode)throws Exception;
+
+    List<String> nameList();
 }
 

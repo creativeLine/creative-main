@@ -26,6 +26,7 @@ public class Day {
 
     private String empCode;
     private Date date;
+    private Integer day;//update need
     private String totalWorkingHourInDay;
     private Status status;
 

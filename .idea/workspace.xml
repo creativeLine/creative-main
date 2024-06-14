@@ -6,7 +6,73 @@
   <component name="ChangeListManager">
     <list default="true" id="94b8f0eb-3e6a-4f28-95ca-a8724b3cfe78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/src/main/java/com/example/APIGATEWAY/Config/GlobleCors.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/src/main/java/com/example/APIGATEWAY/Config/GlobleCors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/src/main/java/com/example/APIGATEWAY/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/src/main/java/com/example/APIGATEWAY/filter/RouteValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/classes/com/example/APIGATEWAY/Config/GlobleCors.class" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/classes/com/example/APIGATEWAY/Config/GlobleCors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-GATEWAY/target/classes/com/example/APIGATEWAY/filter/RouteValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/API-GATEWAY/target/classes/com/example/APIGATEWAY/filter/RouteValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Config/myConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Config/myConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Controller/AttendanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Attendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Models/Month.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/AttendanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/AttendanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/Impl/AttendanceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/Impl/AttendanceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/Impl/EntriesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/src/main/java/com/example/Attendence/Service/Impl/EntriesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Config/myConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Controller/AttendanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Controller/AttendanceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Attendance$AttendanceBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Attendance$AttendanceBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Attendance.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Attendance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Day$DayBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Day$DayBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Day.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Day.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Month$MonthBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Month$MonthBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Month.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Models/Month.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/AttendanceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/AttendanceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/Impl/AttendanceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/Impl/AttendanceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/Impl/EntriesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Attendence/target/classes/com/example/Attendence/Service/Impl/EntriesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/jib-classpath-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/jib-main-class-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/layers/66c1b0999c752098ad26be61550b99cd2ccaad8fb3597f511da06a30751f6b44/9af81fc64423a70aaca33e2300e956c3f3dad8ca8b2f5bdd0811e89630a57b64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/layers/6c0fc53fba698a6ee8a65b615d2250719dd580c14c4fdc03b5df8a6b364bc3dc/5b04cf0f1865748778172cabffae48fe1714282c89bce419032f53ea688814ca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/layers/6ee882f946a734a2fcc626ce80bfb39e819c60b234782a34c431f728b0e69fad/bd41cd51e68bec8200941a50e89f79f0fa9f152f2f02b98b73c3ddb03ab71b9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/layers/ac573b462893bb20e1e7ee89decbf71d5f4afaa5e89752573c66d1b5fd1587e0/c9b927ede9106e1628a42669e8e5608e1a711de0dde7660d40a3874567e26425" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/selectors/02ce9175028ffdca2d3968b5ab840e908ce0b70a2207d7cd1c552a79d0f57513" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/selectors/46d5bab7770fc94e70214ab8944da5b706469a3f983d097b8782295995723a23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/selectors/73d47ef2a310d85f2abc126f86fd43dd1933f7e217ac21da0e16f67c5c53d13f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-cache/selectors/7b7df70dea76bdce44ad0b9a1c54d8293b608cb190dc8c21c3783b1649b21d03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-image.digest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-image.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attendence/target/jib-image.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DepartmentMaster/src/main/java/com/example/DepartmentMaster/Config/myConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/DepartmentMaster/src/main/java/com/example/DepartmentMaster/Config/myConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DepartmentMaster/target/classes/com/example/DepartmentMaster/Config/myConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Config/myConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Config/myConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Services/Impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/src/main/java/com/example/EmployeeMaster/Services/Impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Config/myConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Services/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Services/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Services/Impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeMaster/target/classes/com/example/EmployeeMaster/Services/Impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Dto/RequsetDto/UserRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Dto/RequsetDto/UserRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Trnasformations/UserTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jwtAuthentication-master/src/main/java/com/example/jwtAuthentication/Trnasformations/UserTransformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/jib-classpath-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/jib-main-class-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/layers/58f59697c438a943cb300fb3965d238b51f6cb63b90725751eddd188036a8378/4cf6be26ae080b65982b1250229841bae83afb6505fd5dc00fc82030d1042c50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/layers/6ee882f946a734a2fcc626ce80bfb39e819c60b234782a34c431f728b0e69fad/bd41cd51e68bec8200941a50e89f79f0fa9f152f2f02b98b73c3ddb03ab71b9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/layers/8728ccf50060630c8ef4d6418147d973be67bda611a4400381570b05fd75bcc7/ca0eab46fe9c48ca2fc2bb962bc0781a160bb7e05ea85a63bb41ce712c9f61f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/layers/ffbdb42e6c77b108e1e3dba84b70466e2d1290d051054c0823e2727d0af689a5/19a937ab8364e518d5d239a6c2e03fe20f93bbecdad710e2ff1af39828d44473" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/selectors/0c164686608bbbab076e68ace5720e2bc90f7e7411f7c97cd6809ac6f4eea6c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/selectors/73d47ef2a310d85f2abc126f86fd43dd1933f7e217ac21da0e16f67c5c53d13f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/selectors/8a5b7f93a3e494a1c859091604ccdfd4c648cdd9308964dceea64aa3e0c530fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-cache/selectors/af5ab8ada266dbfb075a1e13d3c38dddc47d17e7ffb396f6c4926cacb3ab3673" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-image.digest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-image.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/jib-image.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/salaryService/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/salaryService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.yml" beforeDir="false" />
@@ -84,13 +150,13 @@
       <recent name="Enum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AttendenceApplication">
-    <configuration name="AttendenceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Attendence.AttendenceApplication" />
-      <module name="Attendence" />
+  <component name="RunManager" selected="Application.SalaryServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.APIGATEWAY.ApiGatewayApplication" />
+      <module name="API-GATEWAY" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Attendence.*" />
+          <option name="PATTERN" value="com.example.APIGATEWAY.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,9 +218,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtAuthenticationApplication" />
-        <item itemvalue="Application.AttendenceApplication" />
         <item itemvalue="Application.SalaryServiceApplication" />
+        <item itemvalue="Application.JwtAuthenticationApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DepartmentMasterApplication" />
         <item itemvalue="Application.EmployeeMasterApplication" />
       </list>
@@ -170,6 +236,17 @@
       <updated>1716548101310</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

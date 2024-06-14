@@ -5,6 +5,7 @@ import com.example.EmployeeMaster.Dtos.RequestDto.EmpRequestDto;
 import com.example.EmployeeMaster.Models.Employee;
 import com.example.EmployeeMaster.Services.EmployeeService;
 import jakarta.persistence.Entity;
+import jakarta.ws.rs.core.NewCookie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,7 +39,7 @@ public class EmployeeController {
         return new ResponseEntity(employee,HttpStatus.OK);
     }
 
-    @CrossOrigin
+
     @GetMapping("/getAll")
     public List<Employee> getAll(){
         return employeeService.getAll();
@@ -63,6 +64,24 @@ public class EmployeeController {
 //    public int getTotal(){
 //      return employeeService.getTotal();
 //    }
+
+    @DeleteMapping("/delete/{empCode}")
+    public ResponseEntity deleteEmployee(@PathVariable String empCode)throws Exception{
+       try {
+           String response = employeeService.delete(empCode);
+           return new ResponseEntity(response,HttpStatus.OK);
+       }
+       catch(Exception e){
+           return new ResponseEntity(e.getMessage(),HttpStatus.BAD_GATEWAY);
+       }
+    }
+
+    @GetMapping("/nameList")
+    public List<String> nameList(){
+       return employeeService.nameList();
+    }
+
+    
 
 
 

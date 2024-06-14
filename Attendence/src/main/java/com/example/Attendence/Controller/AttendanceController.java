@@ -1,9 +1,11 @@
 package com.example.Attendence.Controller;
 
 
+import com.example.Attendence.Dtos.ResponseDto.monthlyResponseDto;
 import com.example.Attendence.Models.Attendance;
 import com.example.Attendence.Service.AttendanceService;
 import com.example.Attendence.Service.EntriesService;
+import jakarta.ws.rs.Path;
 import lombok.experimental.PackagePrivate;
 import org.hibernate.internal.build.AllowPrintStacktrace;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +14,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.cert.CertPathValidatorException;
+import java.util.Date;
+import java.util.Map;
 
 @RestController
-@RequestMapping("attendance")
+@RequestMapping("/attendance")
 public class AttendanceController {
 
 
@@ -23,7 +27,7 @@ public class AttendanceController {
 
 
 
-    @PostMapping("generate")
+    @PostMapping("/generate")
     public ResponseEntity generateAttendance(@RequestParam String empCode) throws Exception{
         try{
              attendanceService.generateAttendance(empCode);
@@ -34,7 +38,7 @@ public class AttendanceController {
         }
     }
 
-    @GetMapping("get/{empCode}")
+    @GetMapping("/get/{empCode}")
     public ResponseEntity getAttendance(@PathVariable String empCode) throws Exception{
        try{
            Attendance attendance = attendanceService.getAttendance(empCode);
@@ -43,6 +47,31 @@ public class AttendanceController {
        catch (Exception e){
            return new ResponseEntity(e.getMessage(),HttpStatus.CONFLICT);
        }
+    }
+
+    @GetMapping("/presentEmployee/{date}")
+    public ResponseEntity getPresentEmployee(@PathVariable String date) throws Exception{
+        try{
+            Map<String,Integer> response = attendanceService.getPresentEmployee(date);
+            return new ResponseEntity(response,HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity(e.getMessage(),HttpStatus.BAD_GATEWAY);
+        }
+    }
+
+
+    // attendance of employee of whole month
+
+    @GetMapping("/monthlyAtten")
+    public ResponseEntity monthlyattendance(@RequestParam String empCode, @RequestParam String monthName) throws Exception{
+        try{
+            monthlyResponseDto responseDto = attendanceService.getMonthlyattendance(empCode,monthName);
+            return new ResponseEntity(responseDto,HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity(e.getMessage(),HttpStatus.CONFLICT);
+        }
     }
 }
 

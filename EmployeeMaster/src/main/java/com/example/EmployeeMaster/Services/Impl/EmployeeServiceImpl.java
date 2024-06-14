@@ -8,11 +8,14 @@ import com.example.EmployeeMaster.Models.Salary;
 import com.example.EmployeeMaster.Repository.EmployeeRepository;
 import com.example.EmployeeMaster.Services.EmployeeService;
 import com.example.EmployeeMaster.Transformations.EmpTransformation;
+import org.bouncycastle.crypto.agreement.srp.SRP6Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -65,6 +68,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             Attendance attendance = restTemplate.getForObject("http://ATTENDANCE/attendance/get/"+employee.getEmpCode(),Attendance.class);
             employee.setAttendance(attendance);
             employee.setSalary(salary);
+            break;
         }
 
         return employees;
@@ -119,6 +123,39 @@ public class EmployeeServiceImpl implements EmployeeService {
         List<Employee> list = employeeRepository.findAll();
         return list.size();
 
+    }
+
+    @Override
+    public String delete(String empCode) throws Exception {
+
+//        String pwd = "gjhg";
+//        String password = "uktrh";
+//
+//        if(!pwd.equals(password)){
+//            throw new Exception("Password not matched");
+//        }
+                
+
+
+        Optional<Employee> optionalEmployee = employeeRepository.findByEmpCode(empCode);
+        if(optionalEmployee.isEmpty()){
+            throw new employeeNotFound("this is invalid value");
+        }
+        Employee employee = optionalEmployee.get();
+        employeeRepository.delete(employee);
+        return "successfully deleted";
+    }
+
+    @Override
+    public List<String> nameList() {
+
+        List<String> list = new ArrayList<>();
+
+        List<Employee> employeeList = employeeRepository.findAll();
+        for(Employee employee:employeeList){
+            list.add(employee.getEmpName());
+        }
+        return list;
     }
 
 
